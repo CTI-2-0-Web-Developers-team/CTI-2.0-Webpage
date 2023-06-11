@@ -284,7 +284,7 @@ nav .navigation ul li a:hover {
   /* height: 80vh; */
   /* padding: 100px 380px; */
   padding: 40px 80px;
-  color: white;
+  color: white !important;
   text-align: center;
 }
 
@@ -360,6 +360,7 @@ margin-top: 50px;
   align-items: center;
   justify-content: center;
   background: #efefef;
+  padding: 0 3rem ;
 }
 
 #course-slider-section h2{
@@ -367,6 +368,7 @@ margin-top: 50px;
   color: #000421;
   text-align: center;
   font-weight: 800;
+  display: block;
   /* font-size: 31px; */
   margin: 50px 0px 30px 0px;
 }
@@ -397,7 +399,7 @@ a{
 }
 
 .card .image-box {
-  height: 300px;
+  height: 210px;
 }
 
 .card .image-box img {
@@ -431,12 +433,12 @@ a{
 }
 
 .swiper-navBtn {
-  color: #000;
-  height: 50px;
-  width: 50px;
-  transform: translateY(-40%);
-  background: #fff;
-  border-radius: 50%;
+  height: 50px !important;
+  width: 50px !important;
+  transform: translateY(50%) !important;
+  border-radius: 50% !important;
+  background-color: #FFF!important;
+  transition: 0.2s;
 }
 
 .swiper-navBtn::before,
@@ -448,6 +450,33 @@ a{
   background-color: #333;
 }
 
+/* CONVENER */
+.convener {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #000421;
+  color: white;
+  padding: 50px 20px ;
+}
+
+.convener> h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.convener> p {
+  margin: 0px 0px 10px 0px;
+  color: #f7941d;
+  font-weight: 0 !important;
+}
+
+.convener> .convener-about {
+  color: white;
+  padding: 0px 300px;
+}
 
 
 /* OUR SPONSERS */
@@ -710,4 +739,87 @@ i:hover {
   font-size: 14px;
 }
 
+}
+
+
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
 }
