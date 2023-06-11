@@ -640,6 +640,11 @@ i:hover {
 
 
 @media (max-width: 769px) {
+  
+  .convener> .convener-about {
+  color: white;
+  padding: 0px 30px;
+}
 
   h1 {
     font-size: 38px;
